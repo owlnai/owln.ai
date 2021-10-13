@@ -11,8 +11,7 @@ export default {
     let post;
     try {
       post = await $content("uses").fetch();
-      // OR const article = await $content(`articles/${params.slug}`).fetch()
-    } catch (e) {
+    } catch {
       error({ message: "Not found" });
     }
 

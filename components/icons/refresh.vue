@@ -3,7 +3,6 @@
     xmlns="http://www.w3.org/2000/svg"
     class="inline-block w-6 h-6 cursor-pointer select-none hover:text-gray-800"
     viewBox="0 0 20 20"
-    @click="randomize"
     fill="currentColor"
   >
     <path

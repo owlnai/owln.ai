@@ -1,5 +1,5 @@
 <template>
-  <div class="flex md:flex-row flex-col-reverse gap-12">
+  <div class="flex flex-col-reverse gap-12 md:flex-row">
     <form
       name="contacto"
       method="post"
@@ -20,19 +20,12 @@
       <div class="text-black-primary">
         <div>
           <div>
-            <h3 class="text-4xl leading-6 text-gold-400 font-titled">
-              Contact me
-            </h3>
+            <h3 class="text-4xl leading-6 text-gold-400 font-titled">Contact me</h3>
           </div>
         </div>
         <div class="flex flex-col gap-8 mt-12">
           <div class="space-y-2">
-            <label
-              for="first_name"
-              class="block text-base font-medium leading-5 text-gray-800"
-            >
-              Name
-            </label>
+            <label for="first_name" class="block text-base font-medium leading-5 text-gray-800">Name</label>
             <div class="mt-1 rounded-md shadow-sm">
               <input
                 type="text"
@@ -40,19 +33,7 @@
                 v-model="formData.first_name"
                 id="first_name"
                 maxlength="64"
-                class="
-                  block
-                  w-full
-                  transition
-                  duration-150
-                  ease-in-out
-                  rounded-md
-                  form-input
-                  border-gray-200
-                  shadow-sm
-                  sm:text-base
-                  sm:leading-5
-                "
+                class="block w-full transition duration-150 ease-in-out border-gray-200 rounded-md shadow-sm form-input sm:text-base sm:leading-5"
               />
             </div>
           </div>
@@ -61,9 +42,7 @@
             <label
               for="email"
               class="block text-base font-medium leading-5 text-gray-800"
-            >
-              Email address
-            </label>
+            >Email address</label>
             <div class="mt-1 rounded-md shadow-sm">
               <input
                 name="email"
@@ -71,19 +50,7 @@
                 type="email"
                 id="email"
                 maxlength="64"
-                class="
-                  block
-                  w-full
-                  transition
-                  duration-150
-                  ease-in-out
-                  border-gray-200
-                  shadow-sm
-                  rounded-md
-                  form-input
-                  sm:text-base
-                  sm:leading-5
-                "
+                class="block w-full transition duration-150 ease-in-out border-gray-200 rounded-md shadow-sm form-input sm:text-base sm:leading-5"
               />
             </div>
           </div>
@@ -91,28 +58,13 @@
             <label
               for="consulta"
               class="block text-base font-medium leading-5 text-gray-800"
-            >
-              Subject
-            </label>
+            >Subject</label>
             <div class="mt-1 rounded-md shadow-sm">
               <textarea
                 name="consulta"
                 v-model="formData.consulta"
                 id="consulta"
-                class="
-                  block
-                  w-full
-                  transition
-                  min-h-[140px]
-                  duration-150
-                  ease-in-out
-                  rounded-md
-                  border-gray-200
-                  shadow-sm
-                  form-input
-                  sm:text-base
-                  sm:leading-5
-                "
+                class="block w-full transition min-h-[140px] duration-150 ease-in-out rounded-md border-gray-200 shadow-sm form-input sm:text-base sm:leading-5"
               />
             </div>
           </div>
@@ -126,94 +78,38 @@
           <span class="inline-flex ml-3 rounded-md shadow-sm">
             <button
               type="submit"
-              class="
-                inline-flex
-                justify-center
-                px-4
-                rounded-md
-                py-2
-                text-base
-                font-medium
-                leading-5
-                text-white
-                transition
-                duration-150
-                ease-in-out
-                bg-black
-                border border-transparent
-                hover:bg-gray-900
-                focus:outline-none
-                focus:border-gray-900
-                focus:shadow-outline-indigo
-                active:bg-gray-900
-              "
-            >
-              Send
-            </button>
+              class="inline-flex justify-center px-4 py-2 text-base font-medium leading-5 text-white transition duration-150 ease-in-out bg-black border border-transparent rounded-md hover:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-indigo active:bg-gray-900"
+            >Send</button>
           </span>
         </div>
       </div>
     </form>
     <div class="w-full pt-16">
-    <span class="text-xl">
-      You can also contact me via...
-      </span>
-      <ul
-        class="flex-col flex lg:justify-around gap-3 mt-4"
-      >
+      <span class="text-xl">You can also contact me via...</span>
+      <ul class="flex flex-col gap-3 mt-4 lg:justify-around">
         <li>
           <a
             href="https://figma.com"
-            class="
-              font-semibold
-              py-2
-              px-4
-              rounded-md
-              border border-gray-200
-              bg-white
-              shadow-sm
-              inline-block
-            "
-            ><iconsTwitter
-              class="w-6 h-6 inline-block mr-3 fill-[#1DA1F2]"
-            />@owln_ai on Twitter</a
+            class="inline-block px-4 py-2 font-semibold bg-white border border-gray-200 rounded-md shadow-sm"
           >
+            <iconsTwitter class="w-6 h-6 inline-block mr-3 fill-[#1DA1F2]" />@owln_ai on Twitter
+          </a>
         </li>
-                <li>
+        <li>
           <a
             href="https://polywork.com/unai"
-            class="
-              font-semibold
-              py-2
-              px-4
-              rounded-md
-              bg-white
-              border border-gray-200
-              shadow-sm
-              inline-block
-            "
-            ><iconsPolywork
-              class="w-6 h-6 inline-block mr-3 fill-[#543DE0]"
-            />@unai on Polywork</a
+            class="inline-block px-4 py-2 font-semibold bg-white border border-gray-200 rounded-md shadow-sm"
           >
+            <iconsPolywork class="w-6 h-6 inline-block mr-3 fill-[#543DE0]" />@unai on Polywork
+          </a>
         </li>
-                <li>
+        <li>
           <a
             href="https://discord.com"
-            class="
-              font-semibold
-              py-2
-              px-4
-              rounded-md
-              bg-white
-              border border-gray-200
-              shadow-sm
-              inline-block
-            "
-            ><iconsDiscord
-              class="w-6 h-6 inline-block mr-3 fill-[#5865F2]"
-            />unai#0001 on Discord</a
+            class="inline-block px-4 py-2 font-semibold bg-white border border-gray-200 rounded-md shadow-sm"
           >
+            <iconsDiscord class="w-6 h-6 inline-block mr-3 fill-[#5865F2]" />unai#0001 on Discord
+          </a>
         </li>
       </ul>
     </div>

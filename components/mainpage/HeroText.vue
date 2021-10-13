@@ -2,7 +2,7 @@
   <div class="flex items-center w-full">
     <h2 class="text-xl font-bold text-gray-500 uppercase">
       Hi, I'm a...
-      <iconsRefresh />
+      <iconsRefresh @click="randomize" />
       <transition
         name="custom-classes-transition"
         enter-active-class="animate__animated animate__bounceIn"
@@ -10,11 +10,9 @@
         mode="out-in"
       >
         <div
-          class="block max-w-xs mt-4 text-4xl text-gray-900 normal-case  lg:text-6xl xl:text-7xl"
+          class="block max-w-xs mt-4 text-4xl text-gray-900 normal-case lg:text-6xl xl:text-7xl"
           :key="heading"
-        >
-          {{ heading }}
-        </div>
+        >{{ heading }}</div>
       </transition>
     </h2>
   </div>
@@ -36,8 +34,8 @@ export default {
         'Blog writer',
         'Software Engineer',
       ],
-      heading: this.phrases.at(-1),
+      heading: 'Software Engineer'
     };
-  },
+  }
 };
 </script>
