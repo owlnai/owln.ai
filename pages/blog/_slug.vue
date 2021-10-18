@@ -86,7 +86,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.post.description || 'A new blog post is here',
+          content: `Unai Mengual: ${this.post.description || 'A new blog post is here'}`,
         },
         {
           property: 'article:modified_time',
