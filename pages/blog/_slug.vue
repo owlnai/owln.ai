@@ -1,29 +1,34 @@
 <template>
   <div class="flex gap-24">
     <div class="space-y-4">
-    <ul class="space-x-1">
-      <li v-for="tag in post.tags.split(' ')" :key="tag" class="inline-block px-3 py-2 mr-2 text-xs text-white bg-black rounded-md dark:text-black dark:bg-white">{{ tag }}</li>
-    </ul>
-    <article class="prose prose-md dark:text-white">
-      <h1 class="font-titled !font-normal !mb-4 dark:!text-white">{{ post.title }}</h1>
-      <span class="flex items-center text-sm">
-        Posted at&nbsp;
-        <time class="text-gray-500">
-          {{
-            new Date(post.createdAt).toLocaleDateString()
-          }}
-        </time>
-        <template v-if="post.createdAt != post.updatedAt">
-          &nbsp;· Last edited at&nbsp;
+      <ul class="space-x-1">
+        <li
+          v-for="tag in post.tags.split(' ')"
+          :key="tag"
+          class="inline-block px-3 py-2 mr-2 text-xs text-white bg-black rounded-md dark:text-black dark:bg-white"
+        >{{ tag }}</li>
+      </ul>
+      <article class="prose prose-md dark:text-white">
+        <h1 class="font-titled !font-normal !mb-4 dark:!text-white">{{ post.title }}</h1>
+        <span class="flex items-center text-sm">
+          Posted at&nbsp;
           <time class="text-gray-500">
             {{
-              new Date(post.updatedAt).toLocaleDateString()
+              new Date(post.createdAt).toLocaleDateString()
             }}
           </time>
-        </template>
-      </span>
-      <nuxt-content :document="post" />
-    </article></div>
+          <template v-if="post.createdAt != post.updatedAt">
+            &nbsp;· Last edited at&nbsp;
+            <time class="text-gray-500">
+              {{
+                new Date(post.updatedAt).toLocaleDateString()
+              }}
+            </time>
+          </template>
+        </span>
+        <nuxt-content :document="post" />
+      </article>
+    </div>
     <div class="mx-auto">
       <h2 class="mt-1 mb-4 text-2xl xl:text-2xl font-titled">Other posts you may also like</h2>
       <n-link
@@ -45,7 +50,6 @@
   </div>
 </template>
 <script>
-// https://og-image-owlnai.vercel.app/**${encodeURIComponent(post.title)}**.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fowln.ai%2Favatar.svg&widths=200&heights=200
 export default {
   async asyncData({ $content, params, error }) {
 
@@ -64,7 +68,17 @@ export default {
     return {
       title: this.post.title,
       meta: [
-        { property: "og:image", content: `https://og-image-owlnai.vercel.app/**${this.post.title}**?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fowln.ai%2Favatar.svg&widths=200&heights=200` },
+        {
+          hid: 'og:image',
+          property: "og:image",
+          content: `https://og-image-owlnai.vercel.app/**${this.post.title}**?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fowln.ai%2Favatar.svg&widths=200&heights=200`
+        },
+        {
+          hid: 'twitter:image',
+          property: "twitter:image",
+          content: `https://og-image-owlnai.vercel.app/**${this.post.title}**?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fowln.ai%2Favatar.svg&widths=200&heights=200`
+        },
+
         {
           property: 'article:published_time',
           content: this.post.createdAt,
@@ -89,7 +103,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `${this.$config.baseUrl}/articles/${this.$route.params.slug}`,
+          href: `${this.$config.baseUrl}/blog/${this.$route.params.slug}`,
         },
       ],
     };
