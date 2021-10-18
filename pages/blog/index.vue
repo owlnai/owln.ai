@@ -10,11 +10,20 @@
       <article class="space-y-3">
         <h1 class="text-3xl font-bold">{{ post.title }}</h1>
         <p class="text-sm xl:text-base">{{ post.description }}</p>
-        <time :datetime="post.date" class="block text-gray-500">
-          {{
-            new Date(post.date).toLocaleDateString()
-          }}
-        </time>
+          <div class="flex justify-between">
+            <time :datetime="post.createdAt" class="block text-gray-500">
+              {{
+                new Date(post.createdAt).toLocaleDateString()
+              }}
+            </time>
+            <ul class="space-x-1">
+              <li
+                v-for="tag in post.tags.split(' ')"
+                :key="tag"
+                class="inline-block px-3 py-2 mr-2 text-xs text-white bg-black rounded-md dark:text-black dark:bg-white"
+              >{{ tag }}</li>
+            </ul>
+          </div>
       </article>
     </n-link>
   </div>

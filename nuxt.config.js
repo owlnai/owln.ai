@@ -9,7 +9,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Personal website' },
+      { hid: 'description', name: 'description', content: 'Software Engineer, independent contractor,  OSS translator' },
+      { property: "og:image", content: "https://pbs.twimg.com/profile_banners/732254337930547200/1633369617/1500x500" },
+      {property: "twitter:site", content: "owln_ai" },
+      { property: "twitter:image", content: "https://pbs.twimg.com/profile_banners/732254337930547200/1633369617/1500x500" },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#da532c' },
       { name: 'theme-color', content: '#ffffff' },
