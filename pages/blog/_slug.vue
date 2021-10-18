@@ -84,6 +84,11 @@ export default {
           content: this.post.createdAt,
         },
         {
+          hid: 'description',
+          name: 'description',
+          content: this.post.description || 'A new blog post is here',
+        },
+        {
           property: 'article:modified_time',
           content: this.post.updatedAt,
         },
