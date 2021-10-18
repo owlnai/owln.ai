@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#F1F1F5] dark:bg-[#161616] dark:text-[#E5E5E5] min-h-screen font-sans p-8 transition-colors duration-300">
+  <div class="bg-[#F1F1F5] dark:bg-[#161616] dark:text-[#E5E5E5] min-h-screen font-sans p-4 sm:p-8 transition-colors duration-300">
     <div class="mx-auto max-w-7xl">
       <Header />
       <Nuxt class="m-4" />

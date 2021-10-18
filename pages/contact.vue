@@ -3,7 +3,7 @@
     <form
       name="contacto"
       method="post"
-      class="w-full max-w-[580px]"
+      class="w-full pr-8 max-w-[580px]"
       netlify
       v-on:submit.prevent="handleSubmit"
       action="/success/"
@@ -67,7 +67,7 @@
                 name="consulta"
                 v-model="formData.consulta"
                 id="consulta"
-                class="dark:bg-[#0e0d0d] dark:border-0 block w-full py-4 transition min-h-[140px] duration-150 ease-in-out rounded-md border-gray-200 shadow-sm form-input sm:text-base sm:leading-5"
+                class="dark:bg-[#0e0d0d] dark:border-0 block w-full py-4 transition min-h-[240px] sm:min-h-[140px] duration-150 ease-in-out rounded-md border-gray-200 shadow-sm form-input sm:text-base sm:leading-5"
               />
             </div>
           </div>
@@ -111,8 +111,8 @@
         </div>
       </div>
     </form>
-    <div class="pt-16">
-      <span class="text-xl">You can also contact me via...</span>
+    <div class="sm:pt-16">
+      <span class="sm:text-xl">You can also contact me via...</span>
       <ul class="flex flex-col gap-3 mt-4 lg:justify-around">
         <li>
           <a
