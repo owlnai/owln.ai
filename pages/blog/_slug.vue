@@ -71,12 +71,12 @@ export default {
         {
           hid: 'og:image',
           property: "og:image",
-          content: `https://og-image-owlnai.vercel.app/**${this.post.title}**?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fowln.ai%2Favatar.svg&widths=200&heights=200`
+          content: `https://og-image-owlnai.vercel.app/**${this.post.title}**?theme=light&md=1&fontSize=125px&images=https%3A%2F%2Fowln.ai%2Fog.svg&widths=auto&heights=300`
         },
         {
           hid: 'twitter:image',
           property: "twitter:image",
-          content: `https://og-image-owlnai.vercel.app/**${this.post.title}**?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fowln.ai%2Favatar.svg&widths=200&heights=200`
+          content: `https://og-image-owlnai.vercel.app/**${this.post.title}**?theme=light&md=1&fontSize=125px&images=https%3A%2F%2Fowln.ai%2Fog.svg&widths=auto&heights=300`
         },
 
         {
