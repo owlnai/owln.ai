@@ -1,5 +1,5 @@
 <template>
-  <div @click="darktoggle()">
+  <div @click="darktoggle()" :title="$colorMode.preference + ' mode'">
     <component :is="`icons-${$colorMode.preference}`"  class="w-8 h-8 cursor-pointer" />
   </div>
 </template>
