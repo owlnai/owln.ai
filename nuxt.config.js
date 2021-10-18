@@ -13,6 +13,7 @@ export default {
       { hid: 'og:image', property: "og:image", content: "https://pbs.twimg.com/profile_banners/732254337930547200/1633369617/1500x500" },
       { property: "twitter:site", content: "owln_ai" },
       { hid: 'twitter:image', property: "twitter:image", content: "https://pbs.twimg.com/profile_banners/732254337930547200/1633369617/1500x500" },
+      { name: 'twitter:card', content: "summary_large_image"},
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#da532c' },
       { name: 'theme-color', content: '#ffffff' },
