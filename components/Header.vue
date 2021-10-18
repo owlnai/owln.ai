@@ -12,7 +12,7 @@
           width="70px"
           height="77px"
           alt="Face drawing of Unai"
-          class="w-8 transition transform scale-50 transition-300 group-hover:rotate-12 sm:w-auto"
+          class="w-8 transition transform transition-300 group-hover:rotate-12 sm:w-auto"
         />Unai Mengual
       </n-link>
       <svg
