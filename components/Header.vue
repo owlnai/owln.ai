@@ -29,48 +29,49 @@
         />
       </svg>
     </div>
-    <div class="hidden sm:flex sm:gap-24" :class="menu && '!block'">
-    <nav>
-      <ul
-        class="grid flex-row items-center grid-cols-3 gap-4 py-2 pr-6 my-4 font-medium text-gray-600 sm:mt-0 justify-items-center sm:items-start sm:gap-8 sm:flex sm:Flex-row dark:text-gray-400 text-md xl:text-lg"
-      >
+    <div class="hidden sm:flex sm:gap-24 sm:items-center" :class="menu && '!block'">
+      <nav>
+        <ul
+          class="grid flex-row items-baseline grid-cols-3 gap-4 py-2 pr-6 my-4 font-medium text-gray-600 sm:my-0 sm:mt-0 justify-items-center sm:gap-8 sm:flex sm:flex-row dark:text-gray-400 text-md xl:text-lg"
+        >
+          <li>
+            <n-link to="/blog" class="hover:text-gray-800 dark:hover:text-gray-200">Blog</n-link>
+          </li>
+          <li>
+            <a
+              href="https://timeline.owln.ai"
+              rel="noopener"
+              class="hover:text-gray-800 dark:hover:text-gray-200"
+            >Timeline</a>
+          </li>
+          <li>
+            <n-link to="/bookmarks" class="hover:text-gray-800 dark:hover:text-gray-200">Bookmarks</n-link>
+          </li>
+          <li>
+            <n-link to="/uses" class="hover:text-gray-800 dark:hover:text-gray-200">Uses</n-link>
+          </li>
+          <li>
+            <n-link to="/contact" class="hover:text-gray-800 dark:hover:text-gray-200">Contact</n-link>
+          </li>
+        </ul>
+      </nav>
+      <ul class="flex justify-center w-full gap-5 py-2">
         <li>
-          <n-link to="/blog" class="hover:text-gray-800 dark:hover:text-gray-200">Blog</n-link>
+          <a href="https://github.com/owln_ai" rel="noopener" title="owlnai at GitHub">
+            <iconsGithub class="w-8 h-8" />
+          </a>
         </li>
         <li>
-          <a
-            href="https://timeline.owln.ai"
-            rel="noopener"
-            class="hover:text-gray-800 dark:hover:text-gray-200"
-          >Timeline</a>
-        </li>
-        <li>
-          <n-link to="/bookmarks" class="hover:text-gray-800 dark:hover:text-gray-200">Bookmarks</n-link>
-        </li>
-        <li>
-          <n-link to="/uses" class="hover:text-gray-800 dark:hover:text-gray-200">Uses</n-link>
-        </li>
-        <li>
-          <n-link to="/contact" class="hover:text-gray-800 dark:hover:text-gray-200">Contact</n-link>
+          <colorPicker />
         </li>
       </ul>
-    </nav>
-    <ul class="flex justify-center w-full gap-5 py-2">
-      <li>
-        <a href="https://github.com/owln_ai" rel="noopener" title="owlnai at GitHub">
-          <iconsGithub class="w-8 h-8" />
-        </a>
-      </li>
-      <li>
-        <colorPicker />
-      </li>
-    </ul></div>
+    </div>
   </header>
 </template>
 <script>
 export default {
   data() {
-    return { 
+    return {
       menu: false
     }
   },
