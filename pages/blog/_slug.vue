@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-24">
+  <div class="flex flex-col sm:flex-row sm:gap-24">
     <div class="space-y-4">
       <ul class="space-x-1">
         <li
