@@ -55,7 +55,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="flex justify-center w-full gap-5 py-2">
+      <ul class="flex items-center justify-center w-full gap-5 py-2">
         <li>
           <a href="https://github.com/owln_ai" rel="noopener" title="owlnai at GitHub">
             <iconsGithub class="w-8 h-8" />

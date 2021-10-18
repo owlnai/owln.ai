@@ -1,6 +1,8 @@
 <template>
   <div @click="darktoggle()" :title="$colorMode.preference + ' mode'">
-    <component :is="`icons-${$colorMode.preference}`"  class="w-8 h-8 cursor-pointer" />
+    <keep-alive>
+      <component :is="`icons-${$colorMode.preference}`" class="w-8 h-8 cursor-pointer" />
+    </keep-alive>
   </div>
 </template>
 <script>
