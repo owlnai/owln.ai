@@ -5,6 +5,9 @@
 @layer utilities {
   @import '~animate.css/animate.min.css';
 }
+.darK\:prose {
+  @apply dark:text-[#E5E5E5]
+}
 
 @font-face {
   font-family: 'Inter';
@@ -150,6 +153,5 @@ Usage:
   font-weight: 400;
   src: local('DM Serif Text'),
     url('../fonts/dm-serif-text-v5-latin-regular.woff2?v=1') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/dm-serif-text-v5-latin-regular.woff?v=1') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/dm-serif-text-v5-latin-regular.woff?v=1') format('woff');
 }

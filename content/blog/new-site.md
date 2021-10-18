@@ -2,7 +2,7 @@
 title: Refactoring my personal site for the nth time
 description: 'Why I decided to re-do my site and how.'
 date: 1633276356341
-last: 1733276356341
+last: 1633276356341
 ---
 
 I've been building websites for a decade, but there's one thing that I never got right: my personal website. A personal website is a reflection of your brand, what you want to show to other people. Because of that, my site has been changing shape and form over the years. You could even tell the design trend that was dominant at the time.

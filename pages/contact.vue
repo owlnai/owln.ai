@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col-reverse gap-12 md:flex-row">
+  <div class="flex flex-col-reverse w-full max-w-4xl gap-12 mx-auto md:flex-row">
     <form
       name="contacto"
       method="post"
-      class="w-full"
+      class="w-[480px]"
       netlify
       v-on:submit.prevent="handleSubmit"
       action="/success/"
@@ -25,7 +25,7 @@
         </div>
         <div class="flex flex-col gap-8 mt-12">
           <div class="space-y-2">
-            <label for="first_name" class="block text-base font-medium leading-5 text-gray-800">Name</label>
+            <label for="first_name" class="block text-base font-medium leading-5 text-gray-800 dark:text-gray-200">Name</label>
             <div class="mt-1 rounded-md shadow-sm">
               <input
                 type="text"
@@ -33,7 +33,7 @@
                 v-model="formData.first_name"
                 id="first_name"
                 maxlength="64"
-                class="block w-full transition duration-150 ease-in-out border-gray-200 rounded-md shadow-sm form-input sm:text-base sm:leading-5"
+                class="dark:bg-[#0e0d0d] dark:border-0block w-full transition duration-150 ease-in-out border-gray-200 rounded-md shadow-sm form-input sm:text-base sm:leading-5"
               />
             </div>
           </div>
@@ -41,7 +41,7 @@
           <div class="space-y-2">
             <label
               for="email"
-              class="block text-base font-medium leading-5 text-gray-800"
+              class="block text-base font-medium leading-5 text-gray-800 dark:text-gray-200"
             >Email address</label>
             <div class="mt-1 rounded-md shadow-sm">
               <input
@@ -50,21 +50,21 @@
                 type="email"
                 id="email"
                 maxlength="64"
-                class="block w-full transition duration-150 ease-in-out border-gray-200 rounded-md shadow-sm form-input sm:text-base sm:leading-5"
+                class="dark:bg-[#0e0d0d] dark:border-0 block w-full transition duration-150 ease-in-out border-gray-200 rounded-md shadow-sm form-input sm:text-base sm:leading-5"
               />
             </div>
           </div>
           <div class="space-y-2">
             <label
               for="consulta"
-              class="block text-base font-medium leading-5 text-gray-800"
+              class="block text-base font-medium leading-5 text-gray-800 dark:text-gray-200"
             >Subject</label>
             <div class="mt-1 rounded-md shadow-sm">
               <textarea
                 name="consulta"
                 v-model="formData.consulta"
                 id="consulta"
-                class="block w-full transition min-h-[140px] duration-150 ease-in-out rounded-md border-gray-200 shadow-sm form-input sm:text-base sm:leading-5"
+                class="dark:bg-[#0e0d0d] dark:border-0 block w-full transition min-h-[140px] duration-150 ease-in-out rounded-md border-gray-200 shadow-sm form-input sm:text-base sm:leading-5"
               />
             </div>
           </div>
@@ -84,13 +84,13 @@
         </div>
       </div>
     </form>
-    <div class="w-full pt-16">
+    <div class="pt-16">
       <span class="text-xl">You can also contact me via...</span>
       <ul class="flex flex-col gap-3 mt-4 lg:justify-around">
         <li>
           <a
             href="https://figma.com"
-            class="inline-block px-4 py-2 font-semibold bg-white border border-gray-200 rounded-md shadow-sm"
+            class="inline-block px-4 py-2 font-semibold dark:bg-[#0e0d0d] dark:border-0  bg-white border border-gray-200 rounded-md shadow-sm"
           >
             <iconsTwitter class="w-6 h-6 inline-block mr-3 fill-[#1DA1F2]" />@owln_ai on Twitter
           </a>
@@ -98,7 +98,7 @@
         <li>
           <a
             href="https://polywork.com/unai"
-            class="inline-block px-4 py-2 font-semibold bg-white border border-gray-200 rounded-md shadow-sm"
+            class="inline-block px-4 py-2 font-semibold dark:bg-[#0e0d0d] dark:border-0  bg-white border border-gray-200 rounded-md shadow-sm"
           >
             <iconsPolywork class="w-6 h-6 inline-block mr-3 fill-[#543DE0]" />@unai on Polywork
           </a>
@@ -106,7 +106,7 @@
         <li>
           <a
             href="https://discord.com"
-            class="inline-block px-4 py-2 font-semibold bg-white border border-gray-200 rounded-md shadow-sm"
+            class="inline-block px-4 py-2 font-semibold dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-sm"
           >
             <iconsDiscord class="w-6 h-6 inline-block mr-3 fill-[#5865F2]" />unai#0001 on Discord
           </a>

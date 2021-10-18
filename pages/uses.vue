@@ -1,6 +1,6 @@
 <template>
-  <article class="prose prose-md">
-    <h1 class="font-titled !font-normal">{{ post.title }}</h1>
+  <article class="prose prose-md dark:text-white">
+    <h1 class="font-titled !font-normal !mb-4 dark:!text-white dark:opacity-65">{{ post.title }}</h1>
     <nuxt-content :document="post" />
   </article>
 </template>

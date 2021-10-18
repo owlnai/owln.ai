@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center w-full">
-    <h2 class="text-xl font-bold text-gray-500 uppercase">
-      Hi, I'm a...
+    <h2 class="text-xl font-bold uppercase">
+      <span class="text-gray-400">Hi, I'm a...</span>
       <iconsRefresh @click="randomize" />
       <transition
         name="custom-classes-transition"
@@ -10,7 +10,7 @@
         mode="out-in"
       >
         <div
-          class="block max-w-xs mt-4 text-4xl text-gray-900 normal-case lg:text-6xl xl:text-7xl"
+          class="block max-w-xs mt-4 text-4xl normal-case lg:text-6xl xl:text-7xl"
           :key="heading"
         >{{ heading }}</div>
       </transition>

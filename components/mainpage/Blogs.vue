@@ -4,13 +4,13 @@
       <h2 class="text-4xl xl:text-5xl font-titled">From the blog</h2>
       <n-link
         to="/blog"
-        class="block px-6 py-2 text-xs font-semibold tracking-wider uppercase transition duration-150 bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-100 sm:px-8 sm:text-base"
+        class="block px-6 py-2 text-xs font-semibold tracking-wider uppercase transition duration-150 bg-white dark:bg-[#0e0d0d] dark:border-0 border border-gray-200 rounded-md shadow-sm hover:bg-gray-100 sm:px-8 sm:text-base"
       >More posts</n-link>
     </div>
     <div class="flex flex-col justify-between gap-8">
       <n-link
         :to="'blog/' + post.slug"
-        class="w-full p-6 bg-white border border-gray-200 rounded-md shadow-md min-h-44"
+        class="w-full p-6 dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-md min-h-44"
         v-for="post of posts"
         :key="post.slug"
       >

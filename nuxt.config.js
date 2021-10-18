@@ -24,9 +24,13 @@ export default {
     viewer: false
   },
   components: true,
+  colorMode: {
+    classSuffix: ''
+  },
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
+    '@nuxtjs/color-mode'
   ],
   modules: [
     '@nuxtjs/axios',

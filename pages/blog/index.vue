@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col justify-between gap-8">
+  <div class="flex flex-col justify-between gap-8 mx-auto">
     <h2 class="text-4xl xl:text-5xl font-titled">From the blog</h2>
     <n-link
-      :to="'blog/' + post.slug"
-      class="w-full p-6 transition duration-150 bg-white border border-gray-200 rounded-md shadow-md hover:bg-gray-100 min-h-44"
+      :to="'/blog/' + post.slug"
+      class="w-full max-w-3xl p-6 transition duration-150 dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-md hover:bg-gray-100 min-h-44"
       v-for="post of posts"
       :key="post.slug"
     >

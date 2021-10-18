@@ -1,17 +1,16 @@
 module.exports = {
-  purge: [],
-    mode: 'jit',
-  darkMode: false, // or 'media' or 'class'
+  mode: 'jit',
+  darkMode: 'class',
   theme: {
     extend: {
-      fontFamily: { 
+      fontFamily: {
         'titled': 'DM Serif Text, serif',
         'sans': "Inter var, Inter, sans-serif"
       }
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms')
+  ],
 }

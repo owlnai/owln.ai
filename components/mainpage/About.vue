@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col justify-center sm:mb-12 w-full">
-    <h2 class="text-4xl xl:text-5xl font-titled mb-8">About me</h2>
+  <div class="flex flex-col justify-center w-full">
+    <h2 class="mb-8 text-4xl xl:text-5xl font-titled">About me</h2>
 
-    <div class="prose prose-lg xl:prose-xl">
+    <div class="prose prose-lg dark:text-gray-200 xl:prose-xl">
       <p>
         Hey there! My name is Unai, known on the Internet as owlnai. I’m a web
         developer focused, mostly, on front-end, accessibility and serverless
