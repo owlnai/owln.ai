@@ -18,9 +18,9 @@
           <h1 class="text-3xl font-bold">{{ post.title }}</h1>
           <p class="text-sm xl:text-base">{{ post.description }}</p>
           <div class="flex justify-between">
-            <time :datetime="post.createdAt" class="block text-gray-500">
+            <time :datetime="post.date" class="block text-gray-500">
               {{
-                new Date(post.createdAt).toLocaleDateString()
+              new Date(post.date).toLocaleDateString()
               }}
             </time>
             <ul class="space-x-1">

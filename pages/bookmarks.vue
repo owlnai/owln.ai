@@ -7,11 +7,10 @@
 
 <script>
 export default {
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, error }) {
     let post;
     try {
       post = await $content("bookmarks").fetch();
-      // OR const article = await $content(`articles/${params.slug}`).fetch()
     } catch {
       error({ message: "Not found" });
     }

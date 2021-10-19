@@ -14,14 +14,14 @@
           Posted at&nbsp;
           <time class="text-gray-500">
             {{
-              new Date(post.createdAt).toLocaleDateString()
+              new Date(post.date).toLocaleDateString()
             }}
           </time>
-          <template v-if="post.createdAt != post.updatedAt">
+          <template v-if="post.date != post.updated">
             &nbsp;· Last edited at&nbsp;
             <time class="text-gray-500">
               {{
-                new Date(post.updatedAt).toLocaleDateString()
+                new Date(post.updated).toLocaleDateString()
               }}
             </time>
           </template>
@@ -81,7 +81,7 @@ export default {
 
         {
           property: 'article:published_time',
-          content: this.post.createdAt,
+          content: this.post.date,
         },
         {
           hid: 'description',
@@ -90,7 +90,7 @@ export default {
         },
         {
           property: 'article:modified_time',
-          content: this.post.updatedAt,
+          content: this.post.updated,
         },
         {
           property: 'article:tag',
