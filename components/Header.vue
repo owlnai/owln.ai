@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex flex-col justify-between pt-2 pb-4 mb-12 border-b border-gray-300 md:items-center md:gap-12 md:px-8 dark:border-gray-600 lg:flex-row"
+    class="flex flex-col justify-between pt-2 pb-4 mb-8 border-b border-gray-3 lg:mb-6 lg:items-center lg:gap-12 lg:px-8 dark:border-gray-600 lg:flex-row"
   >
     <div class="flex items-center justify-center gap-8">
       <n-link
@@ -12,12 +12,12 @@
           width="70px"
           height="77px"
           alt="Face drawing of Unai"
-          class="w-8 transition transform transition-300 group-hover:rotate-12 md:w-auto"
+          class="w-8 transition transform transition-300 group-hover:rotate-12 lg:w-auto"
         />Unai Mengual
       </n-link>
       <!-- To-do move this to a folder -->
       <svg
-        class="w-6 h-6 cursor-pointer md:hidden"
+        class="w-6 h-6 cursor-pointer lg:hidden"
         fill="currentColor"
         viewBox="0 0 20 20"
         @click="showMenu()"
@@ -30,10 +30,10 @@
         />
       </svg>
     </div>
-    <div class="hidden md:flex md:gap-24 md:items-center" :class="menu && '!block'">
+    <div class="hidden lg:flex lg:gap-24 lg:items-center" :class="menu && '!block'">
       <nav>
         <ul
-          class="grid flex-row items-baseline grid-cols-3 gap-4 py-2 pr-6 my-4 font-medium text-gray-600 md:my-0 md:mt-0 justify-items-center md:gap-8 md:flex md:flex-row dark:text-gray-400 text-md xl:text-lg"
+          class="grid flex-row items-baseline grid-cols-3 gap-4 py-2 pr-6 my-4 font-medium text-gray-600 lg:my-0 lg:mt-0 justify-items-center lg:gap-8 lg:flex lg:flex-row dark:text-gray-400 text-md xl:text-lg"
         >
           <li>
             <n-link to="/blog" class="hover:text-gray-800 dark:hover:text-gray-200">Blog</n-link>
