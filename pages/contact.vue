@@ -26,15 +26,16 @@
         <div class="flex flex-col gap-8 mt-12">
           <div class="space-y-2">
             <label
-              for="first_name"
+              for="name"
               class="block text-base font-medium leading-5 text-gray-800 dark:text-gray-200"
             >Name</label>
             <div class="mt-1 rounded-md shadow-sm">
               <input
                 type="text"
-                name="first_name"
-                v-model="formData.first_name"
-                id="first_name"
+                name="name"
+                v-model="formData.name"
+                id="name"
+                required
                 maxlength="64"
                 class="dark:bg-[#0e0d0d] dark:border-0 py-4 block w-full transition duration-150 ease-in-out border-gray-200 rounded-md shadow-sm form-input sm:text-base sm:leading-5"
               />
@@ -59,14 +60,15 @@
           </div>
           <div class="space-y-2">
             <label
-              for="consulta"
+              for="subject"
               class="block text-base font-medium leading-5 text-gray-800 dark:text-gray-200"
             >Subject</label>
             <div class="mt-1 rounded-md shadow-sm">
               <textarea
-                name="consulta"
-                v-model="formData.consulta"
-                id="consulta"
+                name="subject"
+                v-model="formData.subject"
+                id="subject"
+                required
                 class="dark:bg-[#0e0d0d] dark:border-0 block w-full py-4 transition min-h-[240px] sm:min-h-[140px] duration-150 ease-in-out rounded-md border-gray-200 shadow-sm form-input sm:text-base sm:leading-5"
               />
             </div>
