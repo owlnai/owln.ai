@@ -32,16 +32,16 @@
     <div class="mx-auto">
       <h2 class="mt-1 mb-4 text-2xl xl:text-2xl font-titled">Other posts you may also like</h2>
       <n-link
-        :to="'/blog/' + post.slug"
+        :to="'/blog/' + relatedPost.slug"
         class="block w-full max-w-sm p-6 transition duration-150 dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-100 min-h-44"
-        :key="post.slug"
+        :key="relatedPost.slug"
       >
         <article class="space-y-3">
-          <h1 class="text-xl font-bold">{{ post.title }}</h1>
-          <p class="text-sm xl:text-sm">{{ post.description }}</p>
+          <h1 class="text-xl font-bold">{{ relatedPost.title }}</h1>
+          <p class="text-sm xl:text-sm">{{ relatedPost.description }}</p>
           <time :datetime="post.date" class="block text-xs text-gray-500">
             {{
-              new Date(post.date).toLocaleDateString()
+              new Date(relatedPost.date).toLocaleDateString()
             }}
           </time>
         </article>
@@ -54,14 +54,17 @@ export default {
   async asyncData({ $content, params, error }) {
 
     let post;
+    let relatedPost;
     try {
       post = await $content('blog', params.slug).fetch();
+      relatedPost = await $content('blog').where({ title: { $ne: post.title } }).limit(1).fetch();
     } catch {
       error({ message: 'Blog Post not found' });
     }
 
     return {
       post,
+      relatedPost
     };
   },
   head() {

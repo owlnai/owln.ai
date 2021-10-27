@@ -2,8 +2,8 @@
 title: \'Is Nuxt 3 Ready\' is being archived
 description: Archiving this pet project in favor of the official site
 tags: development
-date: 1634839479350
-updated: 1634839479350
+date: 1635368278138
+updated: 1635368278138
 ---
 Last week, with the recent open beta of Nuxt 3, I decided to build "Is Nuxt 3 Ready", that esentially listed the compatibility of Nuxt modules. Initially, it was just a pet project to play with the new Nuxt 3 features, but after [a tweet from @Dawntraoz](https://twitter.com/dawntraoz/status/1451904601989566464) it got really popular. I revamped the design, made it easier for others to contribute and added really nice features such as sorting by status or light/dark modes. 
 
