@@ -2,7 +2,7 @@
   <div class="flex items-center w-full">
     <h2 class="text-xl font-bold uppercase">
       <span class="text-gray-400">Hi, I'm a...</span>
-      <iconsRefresh @click="randomize" />
+      <iconsRefresh @click="randomize()" />
       <transition
         name="custom-classes-transition"
         enter-active-class="animate__animated animate__bounceIn"
