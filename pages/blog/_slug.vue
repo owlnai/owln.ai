@@ -43,8 +43,7 @@ export default {
     }
 
     return {
-      post,
-      relatedPost
+      post
     };
   },
   head() {
