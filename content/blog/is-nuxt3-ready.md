@@ -1,5 +1,5 @@
 ---
-title: 'Is Nuxt 3 Ready' is being archived
+title: Is Nuxt 3 Ready is being archived
 description: Archiving this pet project in favor of the official site
 tags: development
 date: 1635368278138
