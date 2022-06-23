@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'titled': 'DM Serif Text, serif',
+        'serif': 'DM Serif Text, serif',
         'sans': "Inter var, Inter, sans-serif"
       }
     },

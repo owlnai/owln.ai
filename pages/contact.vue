@@ -1,180 +1,130 @@
 <template>
-  <div class="flex flex-col-reverse w-full gap-12 md:flex-row">
+  <div
+    class="flex flex-col-reverse max-w-4xl gap-12 md:grid md:grid-cols-3 mx-auto">
     <form
-      name="contacto"
+      name="contact"
       method="post"
-      class="w-full pr-8 max-w-[580px]"
+      class="w-full md:col-span-2"
       netlify
-      v-on:submit.prevent="handleSubmit"
       action="/success/"
       data-netlify="true"
-      netlify-honeypot="bot-field"
-    >
+      netlify-honeypot="bot-field">
       <p hidden>
-        <input name="bot-field" v-model="formData.botfield" />
-        <label>
-          Don’t fill this out:
-          <input name="bot-field" v-model="formData.botfield" />
-        </label>
+        <label>Don't fill this out:</label>
+        <input name="bot-field" />
       </p>
-      <div class="text-black-primary">
-        <div>
-          <div>
-            <h3 class="text-4xl leading-6 text-gold-400 font-titled">Contact me</h3>
-          </div>
+      <div class="space-y-6">
+        <h1 class="text-4xl leading-6 font-bold dark:text-zinc-200">
+          Contact me
+        </h1>
+        <p>
+          You can contact me using this form. Spam submissions are filtered
+          using Akismet. And don't worry, I check all emails!
+        </p>
+        <div class="space-y-2">
+          <label
+            for="name"
+            class="block font-medium flex justify-between items-center">
+            <span>Name</span>
+            <span class="text-sm">Your full name, or username</span>
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            maxlength="64"
+            class="dark:bg-zinc-900 rounded-md dark:border-teal-800 border-green-600 border-2 p-4 w-full" />
         </div>
-        <div class="flex flex-col gap-8 mt-12">
-          <div class="space-y-2">
-            <label
-              for="name"
-              class="block text-base font-medium leading-5 text-gray-800 dark:text-gray-200"
-            >Name</label>
-            <div class="mt-1 rounded-md shadow-sm">
-              <input
-                type="text"
-                name="name"
-                v-model="formData.name"
-                id="name"
-                required
-                maxlength="64"
-                class="dark:bg-[#0e0d0d] dark:border-0 py-4 block w-full transition duration-150 ease-in-out border-gray-200 rounded-md shadow-sm form-input sm:text-base sm:leading-5"
-              />
-            </div>
-          </div>
 
-          <div class="space-y-2">
-            <label
-              for="email"
-              class="block text-base font-medium leading-5 text-gray-800 dark:text-gray-200"
-            >Email address</label>
-            <div class="mt-1 rounded-md shadow-sm">
-              <input
-                name="email"
-                v-model="formData.email"
-                type="email"
-                id="email"
-                maxlength="64"
-                class="dark:bg-[#0e0d0d] dark:border-0 py-4 block w-full transition duration-150 ease-in-out border-gray-200 rounded-md shadow-sm form-input sm:text-base sm:leading-5"
-              />
-            </div>
-          </div>
-          <div class="space-y-2">
-            <label
-              for="subject"
-              class="block text-base font-medium leading-5 text-gray-800 dark:text-gray-200"
-            >Subject</label>
-            <div class="mt-1 rounded-md shadow-sm">
-              <textarea
-                name="subject"
-                v-model="formData.subject"
-                id="subject"
-                required
-                class="dark:bg-[#0e0d0d] dark:border-0 block w-full py-4 transition min-h-[240px] sm:min-h-[140px] duration-150 ease-in-out rounded-md border-gray-200 shadow-sm form-input sm:text-base sm:leading-5"
-              />
-            </div>
-          </div>
+        <div class="space-y-2">
+          <label
+            for="email"
+            class="block font-medium flex justify-between items-center">
+            <span>E-mail</span>
+            <span class="text-sm">An email address I can reply to</span>
+          </label>
+          <input
+            name="email"
+            type="email"
+            id="email"
+            maxlength="64"
+            class="dark:bg-zinc-900 rounded-md dark:border-teal-800 border-green-600 border-2 p-4 w-full" />
+        </div>
+        <div class="space-y-2">
+          <label
+            for="message"
+            class="block font-medium flex justify-between items-center">
+            <span>Message</span>
+            <span class="text-sm">Don't forget to say hello!</span>
+          </label>
+          <textarea
+            name="message"
+            id="message"
+            required
+            class="dark:bg-zinc-900 rounded-md dark:border-teal-800 border-green-600 border-2 p-4 w-full" />
         </div>
       </div>
-      <div class="pt-5 mt-8">
+      <div class="mt-6">
         <div class="flex justify-end gap-2">
-          <span @click="goBack" class="inline-flex items-center gap-3 px-1 pb-1 shadow-sm">
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <button type="button" class>Go Back</button>
-          </span>
-          <span class="inline-flex ml-3 rounded-md shadow-sm">
-            <button
-              type="submit"
-              class="inline-flex items-center gap-3 px-6 py-2 text-base font-medium leading-5 text-white transition duration-150 ease-in-out bg-black border border-transparent rounded-md dark:hover:border-white light:hover:bg-gray-900 focus:outline-none light:focus:border-gray-900 focus:shadow-outline-indigo light:active:bg-gray-900"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
-                />
-              </svg>
-              Send
-            </button>
-          </span>
+          <CustomButton
+            type="button"
+            @click="back"
+            class="inline-flex items-center gap-3">
+            <UnoIcon class="i-carbon-arrow-left w-6 h-6" />
+            Go back
+          </CustomButton>
+          <CustomButton
+            type="submit"
+            @click="back"
+            class="inline-flex items-center gap-3 !dark:bg-teal-900 dark:text-white/87">
+            <UnoIcon class="i-carbon-send w-6 h-6" />
+            Submit
+          </CustomButton>
         </div>
       </div>
     </form>
-    <div class="sm:pt-16">
-      <span class="sm:text-xl">You can also contact me via...</span>
-      <ul class="flex flex-col gap-3 mt-4 lg:justify-around">
-        <li>
-          <a
-            href="https://figma.com"
-            class="inline-block px-4 py-2 font-semibold dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-sm"
-          >
-            <iconsTwitter class="w-6 h-6 inline-block mr-3 fill-[#1DA1F2]" />@owln_ai on Twitter
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://polywork.com/unai"
-            class="inline-block px-4 py-2 font-semibold dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-sm"
-          >
-            <iconsPolywork class="w-6 h-6 inline-block mr-3 fill-[#543DE0]" />@unai on Polywork
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://discord.com"
-            class="inline-block px-4 py-2 font-semibold dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-sm"
-          >
-            <iconsDiscord class="w-6 h-6 inline-block mr-3 fill-[#5865F2]" />unai#0001 on Discord
-          </a>
+    <div>
+      <span class="sm:text-xl">You can contact me via...</span>
+      <ul
+        class="flex flex-col gap-3 mt-4 lg:justify-around divide-y dark:divide-cyan-700">
+        <li v-for="link in socialLinks" class="pt-3">
+          <NuxtLink :to="link.href" class="inline-flex gap-3 font-medium">
+            <UnoIcon class="w-6 h-6" :class="link.icon" />
+            {{ link.label }}
+          </NuxtLink>
         </li>
       </ul>
     </div>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      formData: {},
-      error: null,
-    }
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-        )
-        .join('&')
-    },
-    goBack() {
-      this.$router.back()
-    },
-    handleSubmit(e) {
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({
-          'form-name': e.target.getAttribute('name'),
-          ...this.formData,
-        }),
-      })
-        .then(() => this.$router.push('/success'))
-        .catch((error) => alert(error))
-    },
-  },
+<script setup lang="ts">
+const { back } = useRouter()
+interface socialLink {
+  label: string
+  href: string
+  icon: string
 }
+const socialLinks: socialLink[] = [
+  {
+    label: "@owln_ai on Twitter",
+    href: "https://twitter.com/owln_ai",
+    icon: "i-logos-twitter",
+  },
+  {
+    label: "@unai on Polywork",
+    href: "https://polywork.com/unai",
+    icon: "i-simple-icons-polywork",
+  },
+  {
+    label: "unai#0001 on Discord",
+    href: "https://discord.com",
+    icon: "i-logos-discord-icon",
+  },
+  {
+    label: "hello@owln.ai",
+    href: "mailto:hello@owln.ai",
+    icon: "i-carbon-email",
+  },
+]
 </script>

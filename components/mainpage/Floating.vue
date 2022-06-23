@@ -2,22 +2,26 @@
   <div class="relative flex items-center justify-center w-full icons-floating">
     <div class="hidden sm:flex">
       <iconsCode
-        class="absolute top-0 w-16 p-3 text-indigo-400 transition duration-200 dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-sm left-20 hover:bg-indigo-50"
-      />
+        class="iconBg top-0 left-20 text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/70" />
       <iconsWrite
-        class="absolute w-16 p-3 text-green-400 transition duration-200 dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-sm bottom-20 left-5 hover:bg-green-50"
-      />
+        class="iconBg bottom-20 left-5 text-green-400 hover:bg-green-50 dark:hover:bg-green-900/70" />
       <iconsDesign
-        class="absolute w-16 p-3 text-pink-400 transition duration-200 dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-sm bottom-10 right-10 hover:bg-pink-50"
-      />
+        class="iconBg bottom-10 right-10 text-pink-400 hover:bg-pink-50  dark:hover:bg-pink-900/70" />
       <iconsTranslate
-        class="absolute w-16 p-3 text-yellow-400 transition duration-200 dark:bg-[#0e0d0d] dark:border-0 bg-white border border-gray-200 rounded-md shadow-sm top-20 right-40 hover:bg-yellow-50"
-      />
+        class="iconBg top-20 right-40 text-yellow-400 hover:bg-yellow-50 dark:hover:bg-yellow-900/70" />
     </div>
-    <nuxt-img src="/person.svg" width="404" height="379" alt="Full body drawing of Unai"  class="dark:brightness-90" />
+    <img
+      src="/person.svg"
+      width="404"
+      height="379"
+      alt="Full body drawing of Unai"
+      class="dark:brightness-90 dark:drop-shadow-[0_0_2px_rgba(255,255,255,1)]" />
   </div>
 </template>
 <style>
+.iconBg {
+  --at-apply: absolute dark:border-zinc-800 bg-white border border-gray-200 rounded-md shadow-sm p-3 w-16 transition duration-200 dark:bg-[#0e0d0d]
+}
 .animate__animated {
   --animate-duration: 0.6s;
 }

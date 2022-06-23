@@ -1,41 +1,24 @@
 <template>
-  <div class="flex items-center w-full">
-    <h2 class="text-xl font-bold uppercase">
-      <span class="text-gray-400">Hi, I'm a...</span>
-      <iconsRefresh @click="randomize()" />
-      <transition
-        name="custom-classes-transition"
-        enter-active-class="animate__animated animate__bounceIn"
-        leave-active-class="animate__animated animate__bounceOut"
-        mode="out-in"
+  <div class="w-full space-y-8">
+    <span class="dark:text-gray-400 text-5xl font-bold dark:text-white/87"
+      >Welcome to my site</span
+    >
+    <p class="text-lg">
+      Hey there! My name is Unai, known on the Internet as owlnai. I'm a web
+      developer based in Spain who always has a project in the works, with a
+      passion for products that are beautiful and easy to use.
+    </p>
+    <div class="flex gap-4">
+      <NuxtLink to="/about"
+        ><CustomButton class="flex gap-2 items-center"
+          ><UnoIcon class="i-carbon-user" />About me</CustomButton
+        ></NuxtLink
       >
-        <div
-          class="block max-w-xs mt-4 text-4xl normal-case lg:text-6xl xl:text-7xl"
-          :key="heading"
-        >{{ heading }}</div>
-      </transition>
-    </h2>
+      <NuxtLink to="/contact"
+        ><CustomButton class="flex gap-2 items-center"
+          ><UnoIcon class="i-carbon-email" />Get in touch</CustomButton
+        ></NuxtLink
+      >
+    </div>
   </div>
 </template>
-<script>
-export default {
-  methods: {
-    randomize() {
-      this.heading =
-        this.phrases[Math.floor(Math.random() * this.phrases.length)];
-    },
-  },
-  data() {
-    return {
-      phrases: [
-        'OSS Translator',
-        'UI designer',
-        'Wiki wizard',
-        'Blog writer',
-        'Software Engineer',
-      ],
-      heading: 'Software Engineer'
-    };
-  }
-};
-</script>

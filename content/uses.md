@@ -1,9 +1,8 @@
 ---
 title: Uses
+date: 1655980885868
 ---
-
 This is another `/uses` page, showing my current up-to-date setup.
-
 ## Editor
 - **Visual Studio Code**, for mostly everything. Sometimes I run the "online" version that the GitHub team made for their platform.
 - **Vim**, whenever I want to make a simple edit and I don't want to open VSCode or any time I connect to a Linux VPS.

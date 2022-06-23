@@ -3,32 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "nuxi start",
+    "generate": "nuxi generate"
   },
   "dependencies": {
-    "@nuxt/content": "^1.14.0",
-    "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/i18n": "^7.0.3",
-    "@nuxtjs/sitemap": "^2.4.0",
-    "@tailwindcss/forms": "^0.3.4",
-    "@tailwindcss/typography": "^0.4.1",
-    "@vueuse/core": "^6.6.1",
+    "@iconify-json/carbon": "^1.1.5",
+    "@nuxt/content": "^2.0.1",
+    "@unocss/nuxt": "^0.39.3",
+    "@vueuse/core": "^6.9.2",
     "animate.css": "^4.1.1",
-    "core-js": "^3.15.1",
-    "imagescript": "^1.2.9",
-    "nuxt": "^2.15.7",
-    "tailwindcss-animatecss": "^1.0.7"
+    "nuxt": "^3.0.0-rc.4",
+    "reading-time": "^1.5.0",
+    "sitemap": "^7.1.1"
   },
   "devDependencies": {
-    "@nuxt/image": "^0.6.0",
-    "@nuxtjs/color-mode": "^2.1.1",
-    "@nuxtjs/google-fonts": "^1.3.0",
-    "@nuxtjs/tailwindcss": "^4.2.0",
-    "eslint-config-prettier": "^8.3.0",
-    "postcss": "^8.3.5",
-    "prettier": "^2.3.2"
+    "@nuxtjs/color-mode": "^3.1.4"
   }
 }
