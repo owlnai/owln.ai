@@ -36,6 +36,6 @@ This is my `/uses` page, showing my current up-to-date setup.
 ### Desk table
 - **IKEA RODULF**, 140x80cm, with adjustable height.
 ### Chair
-- **Secret Lab Titan 2022 Evo*. Very comfy chair with top quality materials for long sessions and doesn't use leather so it's breathable in summer.
+- **Secret Lab Titan 2022 Evo**. Very comfy chair with top quality materials for long sessions and doesn't use leather so it's breathable in summer.
 ## Gadgets
 - **Amazon Alexa Echo Dot 2nd Gen**. This was a special edition with a backlight LED panel for time and weather, so it served both as an assistant and an alarm clock.
