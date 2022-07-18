@@ -13,7 +13,7 @@ defineProps({
     class="flex flex-col p-6 bg-zinc-50/30 dark:bg-zinc-800/30 border border-zinc-500/30 rounded-lg transition-filter duration-200 hover:brightness-125"
   >
     <article class="space-y-3">
-      <img v-if="thumbnail" :src="thumbnail" class="object-cover aspect-16/9" />
+      <nuxt-img v-if="thumbnail" height="120" :src="thumbnail" class="object-cover aspect-16/9" />
       <div>
         <h1 class="text-2xl font-bold dark:text-white/87">
           {{ title }}

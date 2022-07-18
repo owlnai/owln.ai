@@ -1,10 +1,10 @@
 <template>
   <div class="w-full space-y-8">
-    <span class="dark:text-gray-400 text-5xl font-bold dark:text-white/87"
-      >Welcome to my site</span
+    <h1 class="text-gray-700 text-5xl font-bold dark:text-white/87"
+      >Welcome to my site</h1
     >
-    <p class="text-lg">
-      Hey there! My name is Unai, known on the Internet as owlnai. I'm a web
+    <p class="text-xl">
+      Hey there! My name is Unai, known on the Internet as <code>owlnai</code>. I'm a web
       developer based in Spain who always has a project in the works, with a
       passion for products that are beautiful and easy to use.
     </p>

@@ -1,6 +1,5 @@
 import { defineNuxtConfig } from "nuxt"
 import {
-  presetWebFonts,
   presetIcons,
   presetUno,
   presetTypography,
@@ -16,7 +15,13 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
   },
-  modules: ["@nuxtjs/color-mode", "@unocss/nuxt", "@nuxt/content"],
+  modules: [
+    "@nuxtjs/color-mode",
+    "@unocss/nuxt",
+    "@nuxt/content",
+    "@nuxt/image-edge",
+  ],
+  css: ["@/assets/fonts/inter.css"],
   nitro: {
     prerender: {
       routes: ["/sitemap.xml"],
@@ -69,6 +74,11 @@ export default defineNuxtConfig({
   unocss: {
     preflight: true,
     transformers: [transformerDirective()],
+    theme: {
+      fontFamily: {
+        sans: '"Inter var",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+      },
+    },
     presets: [
       presetUno(),
       presetIcons({
@@ -76,12 +86,6 @@ export default defineNuxtConfig({
         cdn: "https://esm.sh/",
       }),
       presetTypography(),
-      presetWebFonts({
-        provider: "google",
-        fonts: {
-          sans: [{ name: "Inter", weights: [400, 500, 600, 700] }],
-        },
-      }),
     ],
   },
 })

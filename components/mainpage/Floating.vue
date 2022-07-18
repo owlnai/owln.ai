@@ -10,7 +10,7 @@
       <iconsTranslate
         class="iconBg top-20 right-40 text-yellow-400 hover:bg-yellow-50 dark:hover:bg-yellow-900/70" />
     </div>
-    <img
+    <nuxt-img
       src="/person.svg"
       width="404"
       height="379"
