@@ -35,7 +35,6 @@ export default defineNuxtConfig({
   },
   css: ["@/assets/fonts/inter.css"],
   nitro: {
-    preset: "netlify-builder",
     prerender: {
       routes: ["/sitemap.xml"],
     },
