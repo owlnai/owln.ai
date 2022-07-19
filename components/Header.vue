@@ -42,12 +42,12 @@ const showMenu = () => {
       <NuxtLink
         class="flex items-center gap-4 text-xl font-semibold tracking- group lg:gap-12 xl:gap-4 xl:text-2xl dark:text-white/87"
         to="/">
-        <nuxt-picture
+        <img
           src="/unai.jpg"
           width="70"
           height="77"
           alt="Face drawing of Unai"
-          :imgAttrs="{ class: 'w-12 rounded-full h-12 transition transform transition-300 group-hover:rotate-12 lg:w-auto' }" />Unai
+          class="w-12 rounded-full h-12 transition transform transition-300 group-hover:rotate-12 lg:w-auto" />Unai
         Mengual
       </NuxtLink>
       <UnoIcon

@@ -11,11 +11,13 @@ defineProps({
   <NuxtLink
     :to="path"
     class="col-span-1 flex flex-col gap-2 p-6 bg-zinc-50/30 dark:bg-zinc-800/30 border border-zinc-500/30 rounded-lg transition-filter duration-200 hover:brightness-125">
-    <nuxt-picture
-      v-if="thumbnail"
-      preset="cover"
+    <img
+    v-if="thumbnail"
+    height="91"
+    width="214"
+    class="aspect-ratio-21/9"
       :src="thumbnail"
-      sizes="sm:100vw md:50vw lg:500px" />
+     />
     <h1 class="text-xl font-bold text-gray-800 dark:text-white/87">
       {{ title }}
     </h1>

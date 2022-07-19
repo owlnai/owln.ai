@@ -1,9 +1,5 @@
 import { defineNuxtConfig } from "nuxt"
-import {
-  presetIcons,
-  presetUno,
-  presetTypography,
-} from "unocss"
+import { presetIcons, presetUno, presetTypography } from "unocss"
 import transformerDirective from "@unocss/transformer-directives"
 
 export default defineNuxtConfig({
@@ -15,28 +11,9 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
   },
-  modules: [
-    "@nuxtjs/color-mode",
-    "@unocss/nuxt",
-    "@nuxt/content",
-    "@nuxt/image-edge",
-  ],
-  image: {
-    provider: 'ipx',
-    presets: {
-      cover: {
-        modifiers: {
-          fit: "cover",
-          format: "jpg",
-          width: 300,
-          height: 300,
-        },
-      },
-    },
-  },
+  modules: ["@nuxtjs/color-mode", "@unocss/nuxt", "@nuxt/content"],
   css: ["@/assets/fonts/inter.css"],
   nitro: {
-    preset: "netlify-builder",
     prerender: {
       routes: ["/sitemap.xml"],
     },
@@ -71,7 +48,6 @@ export default defineNuxtConfig({
       },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "format-detection", content: "telephone=no" },
-      { name: "msapplication-TileColor", content: "#da532c" },
       { name: "theme-color", content: "#ffffff" },
     ],
     link: [

@@ -87,7 +87,7 @@
     <div>
       <span class="sm:text-xl">You can contact me via...</span>
       <ul
-        class="flex flex-col gap-3 mt-4 lg:justify-around divide-y dark:divide-cyan-700">
+        class="flex flex-col gap-3 mt-4 lg:justify-around divide-y dark:divide-gray-700">
         <li v-for="link in socialLinks" class="pt-3">
           <NuxtLink :to="link.href" class="inline-flex gap-3 font-medium">
             <UnoIcon class="w-6 h-6" :class="link.icon" />
