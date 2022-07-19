@@ -1,1 +1,0 @@
-import{_ as e,o as s,b as a}from"./entry-c57dbf89.mjs";const c={};function o(r,n){return s(),a("div",null,"Thanks for your message! I'll get back to you in a few days.")}var _=e(c,[["render",o]]);export{_ as default};
