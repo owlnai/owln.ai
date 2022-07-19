@@ -14,6 +14,7 @@
     "@unocss/nuxt": "^0.44.3",
     "@vueuse/core": "^8.9.4",
     "animate.css": "^4.1.1",
+    "ipx": "^0.9.10",
     "nuxt": "^3.0.0-rc.6",
     "reading-time": "^1.5.0",
     "sitemap": "^7.1.1"

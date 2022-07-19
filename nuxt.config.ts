@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
   ],
   image: {
+    provider: "ipx",
     presets: {
       cover: {
         modifiers: {
