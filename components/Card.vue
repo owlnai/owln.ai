@@ -4,32 +4,27 @@ defineProps({
   title: String,
   description: String,
   date: Number,
-  thumbnail: String
+  thumbnail: String,
 })
 </script>
 <template>
   <NuxtLink
     :to="path"
-    class="flex flex-col p-6 bg-zinc-50/30 dark:bg-zinc-800/30 border border-zinc-500/30 rounded-lg transition-filter duration-200 hover:brightness-125"
-  >
-    <article class="space-y-3">
-      <nuxt-img v-if="thumbnail" height="120" :src="thumbnail" class="object-cover aspect-16/9" />
-      <div>
-        <h1 class="text-2xl font-bold dark:text-white/87">
-          {{ title }}
-        </h1>
-        <p class="text-sm xl:text-base">{{ description }}</p>
-      </div>
-      <div class="flex justify-between self-end">
-        <time
-          v-if="date"
-          :datetime="date.toString()"
-          class="block text-gray-500"
-        >
-          {{ new Date(date).toLocaleDateString() }}
-        </time>
-        <span class="font-medium">View more</span>
-      </div>
-    </article>
+    class="col-span-1 flex flex-col gap-2 p-6 bg-zinc-50/30 dark:bg-zinc-800/30 border border-zinc-500/30 rounded-lg transition-filter duration-200 hover:brightness-125">
+    <nuxt-picture
+      v-if="thumbnail"
+      preset="cover"
+      :src="thumbnail"
+      sizes="sm:100vw md:50vw lg:500px" />
+    <h1 class="text-xl font-bold text-gray-800 dark:text-white/87">
+      {{ title }}
+    </h1>
+    <p class="text-sm xl:text-base">{{ description }}</p>
+    <div class="flex flex-wrap mt-auto pt-3 justify-between">
+      <time v-if="date" :datetime="date.toString()" class="block text-gray-500">
+        {{ new Date(date).toLocaleDateString() }}
+      </time>
+      <span class="font-medium text-gray-800 dark:text-white/87">View more</span>
+    </div>
   </NuxtLink>
 </template>

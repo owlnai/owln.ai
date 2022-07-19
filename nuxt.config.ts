@@ -21,8 +21,21 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image-edge",
   ],
+  image: {
+    presets: {
+      cover: {
+        modifiers: {
+          fit: "cover",
+          format: "jpg",
+          width: 300,
+          height: 300,
+        },
+      },
+    },
+  },
   css: ["@/assets/fonts/inter.css"],
   nitro: {
+    preset: "netlify-builder",
     prerender: {
       routes: ["/sitemap.xml"],
     },

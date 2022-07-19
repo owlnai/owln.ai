@@ -4,14 +4,14 @@ const route = useRoute()
 <template>
   <article class="scroll-smooth sm:px-8">
     <ContentDoc v-slot="{ doc }">
-      <div class="mt-16 mb-8 pb-8 border-b dark:border-gray-700">
+      <div class="mt-8 mb-8 pb-8 border-b dark:border-gray-700">
       <NuxtLink to="blog">← Go back</NuxtLink>
         <h1 class="text-gray-800 text-5xl font-bold dark:text-white/87 mt-3">
           {{ doc.title }}
         </h1>
         <div class="flex flex-col text-md mt-4">
           {{ doc.description
-          }}<NuxtLink :to="doc.url" class="text-blue-500 dark:text-green-300">{{
+          }}<NuxtLink :to="doc.url" class="text-blue-500 dark:text-blue-300">{{
             doc.url
           }}</NuxtLink>
         </div>
@@ -19,7 +19,7 @@ const route = useRoute()
       <div class="relative mx-auto flex flex-col-reverse lg:flex-row gap-12">
         <ContentRenderer
           :value="doc"
-          class="prose dark:prose-invert max-w-3xl dark:text-white/87 text-xl"
+          class="prose dark:prose-invert max-w-3xl dark:text-gray-300 md:text-lg xl:text-xl"
           id="doc" />
         <aside class="border-l dark:border-gray-700 pl-12">
           <ul class="text-sm flex flex-col gap-4" v-if="!doc.disableSidebar">
@@ -69,7 +69,7 @@ article #doc h3 a {
 }
 
 article #doc :where(h2, h3) a {
-  @apply text-gray-700 font-bold dark:text-white/87;
+  @apply text-gray-700 font-bold dark:text-white;
   text-decoration: none;
 }
 </style>

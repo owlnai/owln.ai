@@ -2,7 +2,7 @@
   <div class="w-full">
     <div
       class="flex flex-col items-center gap-4 mb-8 sm:flex-row sm:justify-between">
-      <h2 class="text-4xl font-semibold dark:text-white/87">Latest projects</h2>
+      <h2 class="text-4xl text-gray-800 font-semibold dark:text-white/87">Latest projects</h2>
       <NuxtLink to="/projects"
         ><CustomButton>More projects</CustomButton></NuxtLink
       >

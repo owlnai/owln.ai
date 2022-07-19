@@ -34,7 +34,7 @@
             id="name"
             required
             maxlength="64"
-            class="dark:bg-zinc-900 rounded-md dark:border-teal-800 border-2 p-4 w-full" />
+            class="dark:bg-zinc-900 rounded-md dark:border-gray-800 border-2 p-4 w-full" />
         </div>
 
         <div class="space-y-2">
@@ -49,7 +49,7 @@
             type="email"
             id="email"
             maxlength="64"
-            class="dark:bg-zinc-900 rounded-md dark:border-teal-800 border-2 p-4 w-full" />
+            class="dark:bg-zinc-900 rounded-md dark:border-gray-800 border-2 p-4 w-full" />
         </div>
         <div class="space-y-2">
           <label
@@ -62,7 +62,7 @@
             name="message"
             id="message"
             required
-            class="dark:bg-zinc-900 rounded-md dark:border-teal-800 border-2 p-4 w-full" />
+            class="dark:bg-zinc-900 rounded-md dark:border-gray-800 border-2 p-4 w-full" />
         </div>
       </div>
       <div class="mt-6">
@@ -77,7 +77,7 @@
           <CustomButton
             type="submit"
             @click="back"
-            class="inline-flex items-center gap-3 !dark:bg-teal-900 dark:text-white/87">
+            class="inline-flex items-center gap-3 bg-gradient-to-tl from-cyan-200/40 via-white to-pink-200/30 dark:from-cyan-200/40 dark:via-black dark:to-pink-200/40">
             <UnoIcon class="i-carbon-send w-6 h-6" />
             Submit
           </CustomButton>
