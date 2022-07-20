@@ -19,7 +19,7 @@ const route = useRoute()
       <div class="relative mx-auto flex flex-col-reverse lg:flex-row gap-12">
         <ContentRenderer
           :value="doc"
-          class="prose dark:prose-invert max-w-3xl dark:text-gray-300 text-base 2xl:text-xl"
+          class="prose dark:prose-invert max-w-3xl dark:text-gray-300 text-base 2xl:text-lg"
           id="doc" />
         <aside class="border-l dark:border-gray-700 pl-12">
           <ul class="text-sm flex flex-col gap-4" v-if="!doc.disableSidebar">
