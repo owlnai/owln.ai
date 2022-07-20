@@ -15,6 +15,7 @@ defineProps({
     v-if="thumbnail"
     height="91"
     width="214"
+    :alt="`${title} thumbnail`"
     class="aspect-ratio-21/9"
       :src="thumbnail"
      />
