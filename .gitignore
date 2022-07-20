@@ -92,3 +92,6 @@ sw.*
 
 # Local Netlify folder
 .netlify
+
+# Testing
+.unlighthouse

@@ -37,10 +37,10 @@ const showMenu = () => {
 </script>
 <template>
   <header
-    class="flex flex-col justify-between pt-2 pb-4 mb-6 gap-12 border-b border-gray-3 lg:mb-10 lg:items-center lg:gap-12 lg:px-8 dark:border-gray-600 lg:flex-row">
+    class="flex flex-col justify-between pt-2 pb-4 mb-6 border-b border-gray-3 lg:mb-10 lg:items-center lg:gap-12 lg:px-8 dark:border-gray-600 lg:flex-row">
     <div class="flex items-center justify-center gap-8">
       <NuxtLink
-        class="flex items-center gap-4 text-xl font-semibold tracking- group lg:gap-12 xl:gap-4 xl:text-2xl dark:text-white/87"
+        class="flex items-center gap-4 text-xl font-semibold group lg:gap-4 xl:gap-4 xl:text-2xl dark:text-white/87"
         to="/">
         <img
           src="/unai.jpg"

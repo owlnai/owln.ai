@@ -5,8 +5,8 @@ const route = useRoute()
   <article class="scroll-smooth sm:px-8">
     <ContentDoc v-slot="{ doc }">
       <div class="mt-8 mb-8 pb-8 border-b dark:border-gray-700">
-      <NuxtLink to="blog">← Go back</NuxtLink>
-        <h1 class="text-gray-800 text-5xl font-bold dark:text-white/87 mt-3">
+      <NuxtLink to="/">← Go back</NuxtLink>
+        <h1 class="text-gray-800 text-4xl 2xl:text-5xl font-bold dark:text-white/87 mt-3">
           {{ doc.title }}
         </h1>
         <div class="flex flex-col text-md mt-4">
@@ -19,7 +19,7 @@ const route = useRoute()
       <div class="relative mx-auto flex flex-col-reverse lg:flex-row gap-12">
         <ContentRenderer
           :value="doc"
-          class="prose dark:prose-invert max-w-3xl dark:text-gray-300 md:text-lg xl:text-xl"
+          class="prose dark:prose-invert max-w-3xl dark:text-gray-300 text-base 2xl:text-xl"
           id="doc" />
         <aside class="border-l dark:border-gray-700 pl-12">
           <ul class="text-sm flex flex-col gap-4" v-if="!doc.disableSidebar">
