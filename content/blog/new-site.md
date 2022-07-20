@@ -18,7 +18,7 @@ Every time I open Figma, in order to improve my skills and abilities, I try to c
 
 After some time looking for design inspiration on the Internet and world-class portfolios, I got a few ideas to implement.
 
-![Early Figma prototype of the site](/blog/figma.png)
+![Early Figma prototype of the site](/blog/figma.jpg)
 *A prototype doesn't need to be pixel-perfect and the accurate final representation, but rather a playground to test your ideas and evolve.*
 
 ### Implementing the idea

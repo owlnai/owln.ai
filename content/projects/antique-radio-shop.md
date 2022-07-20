@@ -5,14 +5,14 @@ date: 1653170400000
 updated: 1655980885868
 disableSidebar: true
 url: https://antique-radioshop.com
-thumbnail: /blog/ars-mockup.png
+thumbnail: /blog/ars-mockup.jpg
 ---
 
 Antique Radio Shop is an antique ecommerce site that focuses mainly in tuberadios from the 50s-60s. I rebuilt and redesigned the whole site as part of a much needed update.
 
 ## Overview of the project
 
-![](/blog/ars-mockup.png)
+![](/blog/ars-mockup.jpg)
 
 ### Motivation and analysis
 
@@ -65,7 +65,7 @@ I used the PayPal and Stripe integrations to offer an in-house checkout experien
 
 ### Design
 
-![](/blog/ars-comparison.png)
+![](/blog/ars-comparison.jpg)
 Giving a fresh new face to a website isn't an easy task, specially when it looks so outdated.
 
 I spent a few days on Figma making a lot of prototypes, and decided I would maintain a "luxury" style keeping the identity of the old site.
