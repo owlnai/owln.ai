@@ -11,7 +11,7 @@ const route = useRoute()
         </h1>
         <div class="flex flex-col text-md mt-4">
           {{ doc.description
-          }}<NuxtLink :to="doc.url" class="text-blue-500 dark:text-blue-300">{{
+          }}<NuxtLink :to="doc.url" v-if="doc.url" class="text-blue-500 dark:text-blue-300">{{
             doc.url
           }}</NuxtLink>
         </div>

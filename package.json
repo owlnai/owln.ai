@@ -11,7 +11,7 @@
   "dependencies": {
     "@iconify-json/carbon": "^1.1.6",
     "@nuxt/content": "^2.0.1",
-    "@unocss/nuxt": "^0.44.3",
+    "@unocss/nuxt": "^0.44.4",
     "@vueuse/core": "^8.9.4",
     "animate.css": "^4.1.1",
     "nuxt": "^3.0.0-rc.6",
