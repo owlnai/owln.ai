@@ -6,7 +6,7 @@
       <NuxtLink to="/blog"><CustomButton>More posts</CustomButton></NuxtLink>
     </div>
     <div class="flex flex-col justify-between gap-4">
-      <ContentList path="/blog" v-slot="{ list }" :query="{ limit: 3 }">
+      <ContentList path="/blog" v-slot="{ list }" :query="{ limit: 4, sort: { date: -1 } }">
         <Card
           v-for="post in list"
           :key="post._path"
