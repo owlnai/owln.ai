@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex justify-between">
-      <h2 class="text-4xl xl:text-4xl font-semibold">From the blog</h2>
+      <h2 class="text-4xl xl:text-4xl font-semibold text-gray-800 dark:text-white/87">From the blog</h2>
       <p class="mt-4 mb-12">
         My personal blog, where I post about development, community management
         and other stuff.

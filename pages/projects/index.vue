@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex justify-between">
-      <h2 class="text-4xl xl:text-4xl font-semibold">My projects</h2>
+      <h2 class="text-4xl xl:text-4xl font-semibold text-gray-800 dark:text-white/87">My projects</h2>
       <p class="mt-4 mb-12">Lists of things I've been working on</p>
     </div>
     <ContentList path="/projects" v-slot="{ list }">
