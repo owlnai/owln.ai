@@ -24,6 +24,6 @@ const twitterShareURL = computed(() => {
     :to="twitterShareURL"
     class="block mt-3 font-bold tracking-tight text-sm hover:text-blue-500 dark:hover:text-blue-400"
   >
-    <UnoIcon class="i-ph-twitter-logo-bold w-5 h-5 mr-2" /> Comment on Twitter
+    <UnoIcon class="i-ph-x-logo-bold w-5 h-5 mr-2" /> Comment on X
   </NuxtLink>
 </template>

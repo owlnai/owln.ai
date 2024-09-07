@@ -6,46 +6,43 @@ export default defineNuxtConfig({
     componentIslands: true,
     typedPages: true,
   },
-  extends: ["@nuxthub/core", "nuxt-lego"],
+
+  extends: ["nuxt-lego"],
+
   nitro: {
     experimental: {
       openAPI: true,
     },
   },
+
   routeRules: {
     "/**": { isr: true },
     "/projects": { isr: 3600 },
   },
-  modules: [
-    "@unocss/nuxt",
-    "@nuxt/content",
-    "@nuxtjs/seo",
-    [
-      "@nuxtjs/color-mode",
-      {
-        classSuffix: "",
-      },
-    ],
-    "@vueuse/nuxt",
-    "@nuxt/image",
-    "@nuxtjs/fontaine",
-  ],
+
+  modules: ["@unocss/nuxt", "@nuxt/content", "@nuxtjs/seo", [
+    "@nuxtjs/color-mode",
+    {
+      classSuffix: "",
+    },
+  ], "@vueuse/nuxt", "@nuxt/image"],
 
   runtimeConfig: {
     lastfmKey: "",
   },
+
   site: {
     url: "https://owln.ai/",
     name: "Unai Mengual",
     description: "Owl of the open-source, webdev, UI designer, translator.",
     defaultLocale: "en-US",
   },
+
   css: ["@unocss/reset/tailwind.css"],
+
   devtools: {
     enabled: true,
   },
 
-  typescript: {
-    shim: false,
-  },
+  compatibilityDate: "2024-09-07",
 });

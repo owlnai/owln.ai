@@ -17,7 +17,6 @@ Credential ID EBQ1JIFLZL
 ## Socials
 
 - Twitter: [@owln_ai](https://twitter.com/owln_ai)
-- Mastodon: [owlnai@masto.ai](https://masto.ai/@owlnai)
-- Polywork: [@unai](https://polywork.com/unai)
+- LinkedIn: [@unai](https://linkedin.com/owlnai)
 - GitHub: [@owln_ai](https://github.com/owlnai)
-- Discord: unai#0001
+- Discord: unai

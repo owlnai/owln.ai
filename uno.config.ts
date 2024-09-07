@@ -4,6 +4,8 @@ export default defineConfig({
   shortcuts: {
     magic:
       'bg-clip-text bg-gradient-radial from-cinder-900 via-cinder-400 to-cinder-900 dark:bg-gradient-to-br dark:from-sky-300 dark:to-pink-300 inline-block text-transparent',
+      steel:
+      'bg-clip-text bg-gradient-radial from-neutral-400 via-neutral-600 to-neutral-700 dark:bg-gradient-to-br dark:from-neutral-200 dark:to-neutral-800 inline-block text-transparent',
   },
   theme: {
     colors: {
