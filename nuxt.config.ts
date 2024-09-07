@@ -2,17 +2,19 @@ import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
   experimental: {
-    payloadExtraction: true,
     componentIslands: true,
     typedPages: true,
+    buildCache: true,
   },
 
   extends: ["nuxt-lego"],
-
   nitro: {
     experimental: {
       openAPI: true,
     },
+  },
+  future: {
+    compatibilityVersion: 4,
   },
 
   routeRules: {
