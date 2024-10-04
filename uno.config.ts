@@ -1,13 +1,17 @@
-import { defineConfig, presetIcons, presetTypography, presetUno, presetWebFonts } from 'unocss'
+import { defineConfig, presetIcons, presetUno } from 'unocss'
 
 export default defineConfig({
   shortcuts: {
     magic:
       'bg-clip-text bg-gradient-radial from-cinder-900 via-cinder-400 to-cinder-900 dark:bg-gradient-to-br dark:from-sky-300 dark:to-pink-300 inline-block text-transparent',
-      steel:
+    steel:
       'bg-clip-text bg-gradient-radial from-neutral-400 via-neutral-600 to-neutral-700 dark:bg-gradient-to-br dark:from-neutral-200 dark:to-neutral-800 inline-block text-transparent',
   },
   theme: {
+    fontFamily: {
+      headings: ['Syne', 'sans-serif'],
+      body: ['Inter', 'sans-serif'],
+    },
     colors: {
       cinder: {
         50: '#f7f5fa',
@@ -27,20 +31,12 @@ export default defineConfig({
   },
   presets: [
     presetUno(),
-    presetTypography(),
     presetIcons({
       extraProperties: {
         'display': 'inline-block',
         'vertical-align': 'middle',
       },
       cdn: 'https://esm.sh/',
-    }),
-    presetWebFonts({
-      provider: 'google',
-      fonts: {
-        sans: 'Inter:400,500,600,700',
-        headings: 'Syne:700',
-      },
     }),
   ],
 })

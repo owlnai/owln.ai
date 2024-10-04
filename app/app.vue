@@ -1,13 +1,13 @@
+<script setup lang="ts">
+defineOgImage()
+</script>
 <template>
   <div
     class="min-h-screen font-sans text-gray-600 bg-cinder-50 dark:bg-black  dark:text-zinc-400 flex flex-col justify-between custom-inter scroll-smooth antialiased selection:bg-red-300 linear-bg print:!bg-white print:!bg-none print:!text-black"
   >
     <NuxtLoadingIndicator color="#45376d" />
     <navigationTheHeader />
-    <NuxtLayout>
-      <OgImage component="PageOgImage" />
-      <NuxtPage class="mb-auto" />
-    </NuxtLayout>
+    <mainpageHero />
     <navigationTheFooter />
   </div>
 </template>

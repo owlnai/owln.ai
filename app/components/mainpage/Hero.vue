@@ -25,7 +25,7 @@ const images = [
 
 <template>
   <section
-    class="relative container mx-auto flex flex-col items-center justify-center w-full gap-8 sm:gap-10 pt-12 pb-16 font-sans md:pb-24 md:pt-16 lg:pb-42 lg:pt-30 isolate gradient px-6 2xl:px-0"
+    class="relative container mx-auto flex flex-col items-center justify-center w-full gap-8 sm:gap-10 pt-12 pb-16 font-sans md:pb-24 md:pt-16  isolate gradient px-6 2xl:px-0"
     aria-label="My abilities"
   >
     <div class="max-w-3xl flex flex-col gap-6 sm:gap-12 mb-8">
@@ -86,5 +86,8 @@ const images = [
 
 .gradient {
   background: radial-gradient(#7856d428 20%, transparent 70%);
+}
+.light .gradient {
+  background: radial-gradient(#7856d419 20%, transparent 70%);
 }
 </style>

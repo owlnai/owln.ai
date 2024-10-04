@@ -2,7 +2,6 @@ import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
   experimental: {
-    componentIslands: true,
     typedPages: true,
     buildCache: true,
   },
@@ -16,18 +15,12 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-
-  routeRules: {
-    "/**": { isr: true },
-    "/projects": { isr: 3600 },
-  },
-
   modules: ["@unocss/nuxt", "@nuxt/content", "@nuxtjs/seo", [
     "@nuxtjs/color-mode",
     {
       classSuffix: "",
     },
-  ], "@vueuse/nuxt", "@nuxt/image"],
+  ], "@vueuse/nuxt", "@nuxt/image", "@nuxt/fonts"],
 
   runtimeConfig: {
     lastfmKey: "",
