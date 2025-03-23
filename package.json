@@ -18,5 +18,15 @@
   },
   "devDependencies": {
     "wrangler": "^4.4.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "better-sqlite3",
+      "esbuild",
+      "sharp",
+      "vue-demi",
+      "workerd"
+    ]
   }
 }
